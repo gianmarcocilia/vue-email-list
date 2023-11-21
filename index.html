@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <button @click="generateEmail">Genera 10 indirizzi email</button>
-        <ul>
+        <ul v-show="emails.length === 10">
             <li v-for="email in emails">
                 {{ email }}
             </li>
